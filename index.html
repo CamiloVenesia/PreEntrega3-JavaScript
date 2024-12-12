@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestión de Productos</h1>
+    </header>
+
+    <div class="container">
+        <!-- Formulario y acciones -->
+        <div class="left">
+            <form id="productForm">
+                <input type="text" id="productName" placeholder="Nombre del Producto" required>
+                <input type="text" id="productCategory" placeholder="Categoría" required>
+                <input type="number" id="productPrice" placeholder="Precio" required>
+                <button type="submit">Agregar Producto</button>
+            </form>
+
+            <div class="actions">
+                <button id="viewAll">Ver Todo</button>
+                <button id="filterUnder100">Filtrar Productos < $100</button>
+                <button id="searchZapatillas">Buscar Zapatillas</button>
+                <button id="searchChomba">Buscar Producto "Chomba"</button>
+            </div>
+        </div>
+
+        <!-- Resultados -->
+        <div class="right">
+            <h2>Productos</h2>
+            <div id="productList"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
